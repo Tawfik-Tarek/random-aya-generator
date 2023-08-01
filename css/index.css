@@ -87,7 +87,7 @@ body {
 @media (max-width: 994px) {
   .container {
     width: 90%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
