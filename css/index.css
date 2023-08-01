@@ -1,0 +1,96 @@
+* {
+  direction: rtl;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif;
+}
+body {
+  background-color: #333;
+}
+.parent {
+  height: 100vh;
+  position: relative;
+}
+.container {
+  box-shadow: 0px 1px 13px 5px white;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 20px 15px;
+}
+.container h1,
+.container .div {
+  margin-bottom: 40px;
+}
+.container h1 {
+  font-size: 4em;
+  color: darkcyan;
+  position: relative;
+}
+.container h1::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  top: 108%;
+  transform: translatex(-50%);
+  left: 50%;
+  height: 2px;
+  margin-top: 10px;
+  background-color: darkcyan;
+}
+.container h1::after {
+  content: "";
+  position: absolute;
+  top: 96%;
+  width: 100%;
+  transform: translatex(-50%);
+  left: 50%;
+  height: 2px;
+  margin-top: 10px;
+  background-color: darkcyan;
+}
+.container button {
+  border: 1px solid aqua;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 7px;
+  font-size: 30px;
+  background-color: darkcyan;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+#aya {
+  color: white;
+  font-size: 2rem;
+  max-width: 95%;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.container button:hover {
+  background-color: white;
+  color: darkcyan;
+}
+.container audio{
+  display: none;
+}
+@media (min-width: 994px){
+  .container audio{
+    margin-bottom: 15px;
+  }
+} 
+@media (max-width: 994px) {
+  .container {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+}
