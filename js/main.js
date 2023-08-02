@@ -5,7 +5,7 @@ const aya = document.querySelector("#aya"),
 btn.addEventListener("click", getAya);
 async function getAya() {
   let random1 = Math.floor(Math.random() * (6236 - 1) + 1);
-  let random2 = Math.floor(Math.random() * (11 - 1) + 1);
+  let random2 = Math.floor(Math.random() * (10 - 1) + 1);
   const res = await fetch(`https://api.alquran.cloud/v1/ayah/${random1}`);
   const res2 = await fetch(
     `https://api.quran.com/api/v4/recitations/${random2}/by_ayah/${random1}`
